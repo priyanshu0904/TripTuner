@@ -23,7 +23,7 @@ def ask_ai(user_query):
         return "Empty prompt sent to AI. Write something to experience the best planning for your next amazing trip."
 
     if not HF_API_KEY:
-        return "❌ API Key not found. Please check your .env file."
+        return "API Key not found. Please check your .env file."
 
     data = {
         "model": "meta-llama/Llama-3.1-8B-Instruct:novita",
