@@ -20,7 +20,7 @@ HEADERS = {
 # the query used by the model
 def ask_ai(user_query):
     if not user_query:
-        return "❌ Empty prompt sent to AI. Write something to experience the best planning for your next amazing trip."
+        return "Empty prompt sent to AI. Write something to experience the best planning for your next amazing trip."
 
     if not HF_API_KEY:
         return "❌ API Key not found. Please check your .env file."
